@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 991225832
+CRC: 1099882333
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: katana
+      Dependencies: {}
+    Info_1:
+      Name: cube
       Dependencies: {}
