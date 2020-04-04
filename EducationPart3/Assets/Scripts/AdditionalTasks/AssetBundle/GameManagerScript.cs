@@ -29,7 +29,7 @@ public class GameManagerScript : MonoBehaviour
 
     private void LoadAssetBundleObject()
     {        
-        _loadedAssetBundleObject = AssetBundle.LoadFromFile("Assets/AssetBundles/cube");
+        _loadedAssetBundleObject = AssetBundle.LoadFromFile("Assets/AssetBundles/firetruck");
         if (_loadedAssetBundleObject != null)
         {
             _loadedGO = _loadedAssetBundleObject.LoadAsset<GameObject>(_loadedAssetBundleObject.GetAllAssetNames()[0]);
@@ -39,7 +39,7 @@ public class GameManagerScript : MonoBehaviour
 
     private void SpawnObject()
     {
-        GameObject currentObject = Instantiate(_loadedGO) as GameObject;
+        GameObject currentObject = Instantiate(_loadedGO);
         SelectPositionForObject(currentObject);
         _spawnedObjects.Add(currentObject);
     }
